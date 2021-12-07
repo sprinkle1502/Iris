@@ -1,3 +1,6 @@
+AuthType Basic
+Authname "Password Protected Area"
+Requirvalid-user
 RewriteBase /
 
 # Rewrite our application folders
