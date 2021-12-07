@@ -1,4 +1,4 @@
 AuthType Basic
-Authname "Password Protected Area"
+AuthName "Password Protected Area"
 AuthUserFile /src/iris/.htpassword
 Require valid-user
