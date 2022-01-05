@@ -12,6 +12,7 @@ RewriteRule (.*) $1 [L]
 # Rewrite everything else to our ReactJS app
 # This allows nice URLS and React-Router will do the rest
 RewriteRule ^ index.html [L]
-order deny,allow
-deny from all
-allow from 192.168.1.17
+<RequireAll>
+Require all denied
+Require ip 192.168.1.17
+</RequireAll>
